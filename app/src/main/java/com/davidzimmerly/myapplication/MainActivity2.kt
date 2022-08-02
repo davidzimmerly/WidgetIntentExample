@@ -1,9 +1,8 @@
 package com.davidzimmerly.myapplication
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.davidzimmerly.myapplication.ui.main.BlankFragment
 
 class MainActivity2 : AppCompatActivity() {
@@ -20,7 +19,7 @@ class MainActivity2 : AppCompatActivity() {
         intent?.apply {
             Toast.makeText(
                 applicationContext,
-                "received intent with uuid: ${this.getStringExtra("UUID")}",
+                "received intent with uuid: ${getStringExtra("UUID")}",
                 Toast.LENGTH_SHORT
             ).show()
         }
